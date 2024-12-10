@@ -6,8 +6,12 @@ export default function SomeLogo() {
     <div
       className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
     >
-      <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
-      <p className="text-[44px]">Logo</p>
+      <div >
+        <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
+      </div>
+      <p className="text-[32px] ">Live </p>
+      <p className="text-[32px] ">Active</p>
+
     </div>
   );
 }
