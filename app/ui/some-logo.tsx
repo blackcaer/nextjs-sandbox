@@ -9,8 +9,7 @@ export default function SomeLogo() {
       <div >
         <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
       </div>
-      <p className="text-[32px] ">Live </p>
-      <p className="text-[32px] ">Active</p>
+      <p className="text-[32px] ">LiveActive </p>
 
     </div>
   );

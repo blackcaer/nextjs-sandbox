@@ -13,19 +13,19 @@ import clsx from 'clsx';
 // Map of links to display in the side navigation.
 const links = [
   { name: 'Activity', 
-    href: '/liveactive/activity', 
+    href: '/activity', 
     icon: HomeIcon },
   {
     name: 'Stats',
-    href: '/liveactive/stats',
+    href: '/stats',
     icon: DocumentDuplicateIcon,
   },
   { name: 'Calendar', 
-    href: '/liveactive/calendar', 
+    href: '/calendar', 
     icon: UserGroupIcon },
   
   { name: 'Contact', 
-    href: '/liveactive/contact', 
+    href: '/contact', 
     icon: UserGroupIcon },
 ];
 
