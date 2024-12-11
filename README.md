@@ -3,13 +3,12 @@ This is nextjs sandbox. I'm testing different components and learning how to con
 
 Packages to install:
 
+```bash
 npm install @heroicons/react
 npm install clsx
 npx shadcn@latest init -d
-npx shadcn@latest add form
-npx shadcn@latest add button
-npx shadcn@latest add input
-npx shadcn@latest add textarea
+npx shadcn@latest add form button input textarea
+```
 
 To run the development server:
 
