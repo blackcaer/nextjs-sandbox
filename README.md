@@ -6,8 +6,10 @@ Packages to install:
 npm install @heroicons/react
 npm install clsx
 npx shadcn@latest init -d
+npx shadcn@latest add form
 npx shadcn@latest add button
-
+npx shadcn@latest add input
+npx shadcn@latest add textarea
 
 To run the development server:
 
