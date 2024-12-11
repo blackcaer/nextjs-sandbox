@@ -2,7 +2,6 @@ import clsx from "clsx";
 import Image from "next/image";
 import { MapIcon } from "@heroicons/react/24/outline";
 
-
 interface UserData {
     id: number;
     name: string;
@@ -15,6 +14,8 @@ interface UserData {
   
 export default function UserActivity({ userData }: {userData: UserData}) {
 
+  const dateObject = new Date(userData.date);
+  const formattedDate = dateObject.toLocaleDateString();
   return (
     <div key={userData.id} className="flex flex-col border w-full">
       <div
@@ -39,7 +40,7 @@ export default function UserActivity({ userData }: {userData: UserData}) {
 
         </div>
         <div className={`truncate text-sm font-medium md:text-base`}>
-          <p>{userData.date}</p>
+          <p>{formattedDate}</p>
         
         </div>
       </div>
