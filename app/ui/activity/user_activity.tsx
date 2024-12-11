@@ -2,21 +2,23 @@ import clsx from "clsx";
 import Image from "next/image";
 import { MapIcon } from "@heroicons/react/24/outline";
 
-export default function UserActivity() {
-  const userData = {
-    id: 1,
-    name: "John Nowak",
-    amount: 1,
-    email: "example@email.com",
-    avatar_img_url: "/avatars/avatar1.png",
-    route_img_url: "/example/route1.png",
-  };
 
-  const i = 0;
+interface UserData {
+    id: number;
+    name: string;
+    email: string;
+    avatar_img_url: string;
+    route_img_url: string;
+    text: string;
+    date: string;
+  }
+  
+export default function UserActivity({ userData }: {userData: UserData}) {
+
   return (
     <div key={userData.id} className="flex flex-col border w-full">
       <div
-        className="flex flex-row items-center justify-between px-7 pt-7 pb-4 w-full"
+        className="flex flex-row items-center justify-between px-7 py-4 w-full"
       >
         <div className="flex items-center">
           <Image
@@ -35,10 +37,10 @@ export default function UserActivity() {
             </p>
           </div>
 
-
         </div>
         <div className={`truncate text-sm font-medium md:text-base`}>
-          <p>{21321}</p>
+          <p>{userData.date}</p>
+        
         </div>
       </div>
 
@@ -53,8 +55,8 @@ export default function UserActivity() {
         className="block rounded-xl my-2"
         />
         
-        <p>
-        Lorem ipsum dolor sit amet
+        <p className="pl-1 pt-2">
+            {userData.text}
         </p>
 
       </div>
